@@ -1,7 +1,4 @@
 "use strict";
 
-var arr = [1, 2, 3, 4, 5];
-var newArr = arr.map(function (item) {
-  return item * 2;
-});
-console.log(newArr);
+var fruits = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demo").innerHTML = fruits.join(" * ");
