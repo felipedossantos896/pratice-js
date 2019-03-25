@@ -1,31 +1,7 @@
-class List {
-    constructor(){
-        this.data = [];
-    }
+let arr = [1, 2, 3, 4, 5];
 
-    add(data){
-        this.data.push(data);
-        console.log(this.data);
-    }
-}
+let newArr = arr.map(function(item){
+    return item * 2;
+});
 
-class TodoList extends List{
-
-    constructor(){
-        super();
-
-        this.usuario = 'Felipe';
-    }
-
-    mostrarUsuario(){
-        console.log(this.usuario);
-    }
-}
-
-const MinhaList = new TodoList();
-
-document.getElementById('novotodo').onclick = function() {
-    MinhaList.add('Novo todo');
-}
-
-MinhaList.mostrarUsuario();
+console.log(newArr);
